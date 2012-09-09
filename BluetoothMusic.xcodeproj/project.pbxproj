@@ -13,8 +13,6 @@
 		B8E991DC15FC8B00009BD34C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E991DA15FC8B00009BD34C /* InfoPlist.strings */; };
 		B8E991DE15FC8B00009BD34C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991DD15FC8B00009BD34C /* main.m */; };
 		B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991E115FC8B00009BD34C /* AppDelegate.m */; };
-		B8E991E515FC8B00009BD34C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E991E315FC8B00009BD34C /* MainStoryboard_iPhone.storyboard */; };
-		B8E991E815FC8B00009BD34C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E991E615FC8B00009BD34C /* MainStoryboard_iPad.storyboard */; };
 		B8E991EB15FC8B00009BD34C /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */; };
 		B8E991F315FC8B00009BD34C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991F215FC8B00009BD34C /* SenTestingKit.framework */; };
 		B8E991F415FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
@@ -45,8 +43,6 @@
 		B8E991DF15FC8B00009BD34C /* BluetoothMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BluetoothMusic-Prefix.pch"; sourceTree = "<group>"; };
 		B8E991E015FC8B00009BD34C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8E991E115FC8B00009BD34C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B8E991E415FC8B00009BD34C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		B8E991E715FC8B00009BD34C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B8E991E915FC8B00009BD34C /* BMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFirstViewController.h; sourceTree = "<group>"; };
 		B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
 		B8E991F115FC8B00009BD34C /* BluetoothMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,7 +82,6 @@
 		B8E991C215FC8B00009BD34C = {
 			isa = PBXGroup;
 			children = (
-				B8E9920D15FC8C64009BD34C /* GameKit.framework */,
 				B8E991D715FC8B00009BD34C /* BluetoothMusic */,
 				B8E991F815FC8B00009BD34C /* BluetoothMusicTests */,
 				B8E991D015FC8B00009BD34C /* Frameworks */,
@@ -106,6 +101,7 @@
 		B8E991D015FC8B00009BD34C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8E9920D15FC8C64009BD34C /* GameKit.framework */,
 				B8E991D115FC8B00009BD34C /* UIKit.framework */,
 				B8E991D315FC8B00009BD34C /* Foundation.framework */,
 				B8E991D515FC8B00009BD34C /* CoreGraphics.framework */,
@@ -119,8 +115,6 @@
 			children = (
 				B8E991E015FC8B00009BD34C /* AppDelegate.h */,
 				B8E991E115FC8B00009BD34C /* AppDelegate.m */,
-				B8E991E315FC8B00009BD34C /* MainStoryboard_iPhone.storyboard */,
-				B8E991E615FC8B00009BD34C /* MainStoryboard_iPad.storyboard */,
 				B8E991E915FC8B00009BD34C /* BMFirstViewController.h */,
 				B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
@@ -230,8 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8E991DC15FC8B00009BD34C /* InfoPlist.strings in Resources */,
-				B8E991E515FC8B00009BD34C /* MainStoryboard_iPhone.storyboard in Resources */,
-				B8E991E815FC8B00009BD34C /* MainStoryboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,22 +289,6 @@
 				B8E991DB15FC8B00009BD34C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		B8E991E315FC8B00009BD34C /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8E991E415FC8B00009BD34C /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		B8E991E615FC8B00009BD34C /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B8E991E715FC8B00009BD34C /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		B8E991FB15FC8B00009BD34C /* InfoPlist.strings */ = {
