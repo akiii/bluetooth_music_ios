@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B823F3BD15FC98A800F30EF9 /* BMFirstMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */; };
 		B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
 		B8E991D415FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
 		B8E991D615FC8B00009BD34C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D515FC8B00009BD34C /* CoreGraphics.framework */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B823F3BB15FC98A800F30EF9 /* BMFirstMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstMainView.h; sourceTree = "<group>"; };
+		B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstMainView.m; sourceTree = "<group>"; };
 		B8E991CD15FC8B00009BD34C /* BluetoothMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E991D115FC8B00009BD34C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8E991D315FC8B00009BD34C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				B8E991E115FC8B00009BD34C /* AppDelegate.m */,
 				B8E991E915FC8B00009BD34C /* BMFirstViewController.h */,
 				B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */,
+				B823F3BB15FC98A800F30EF9 /* BMFirstMainView.h */,
+				B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
 			);
 			path = BluetoothMusic;
@@ -261,6 +266,7 @@
 				B8E991DE15FC8B00009BD34C /* main.m in Sources */,
 				B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */,
 				B8E991EB15FC8B00009BD34C /* BMFirstViewController.m in Sources */,
+				B823F3BD15FC98A800F30EF9 /* BMFirstMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
