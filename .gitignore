@@ -1,0 +1,5 @@
+/*.xcodeproj/project.xcworkspace/*
+/*.xcodeproj/xcuserdata/*
+ZipArchive/ZipArchive/ZipArchive.xcodeproj/xcuserdata/*
+*.swp
+.DS_Store
