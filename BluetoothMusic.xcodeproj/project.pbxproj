@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B823F3BD15FC98A800F30EF9 /* BMFirstMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */; };
 		B823F3C415FCA14A00F30EF9 /* BMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823F3C315FCA14A00F30EF9 /* BMSecondViewController.m */; };
+		B823F3C615FCA17300F30EF9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */; };
 		B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
 		B8E991D415FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
 		B8E991D615FC8B00009BD34C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D515FC8B00009BD34C /* CoreGraphics.framework */; };
@@ -39,6 +40,7 @@
 		B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstMainView.m; sourceTree = "<group>"; };
 		B823F3C215FCA14A00F30EF9 /* BMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondViewController.h; sourceTree = "<group>"; };
 		B823F3C315FCA14A00F30EF9 /* BMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSecondViewController.m; sourceTree = "<group>"; };
+		B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B8E991CD15FC8B00009BD34C /* BluetoothMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E991D115FC8B00009BD34C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8E991D315FC8B00009BD34C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B823F3C615FCA17300F30EF9 /* MediaPlayer.framework in Frameworks */,
 				B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */,
 				B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */,
 				B8E991D415FC8B00009BD34C /* Foundation.framework in Frameworks */,
@@ -107,6 +110,7 @@
 		B8E991D015FC8B00009BD34C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */,
 				B8E9920D15FC8C64009BD34C /* GameKit.framework */,
 				B8E991D115FC8B00009BD34C /* UIKit.framework */,
 				B8E991D315FC8B00009BD34C /* Foundation.framework */,
