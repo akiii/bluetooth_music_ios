@@ -15,7 +15,7 @@
 		B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991E115FC8B00009BD34C /* AppDelegate.m */; };
 		B8E991E515FC8B00009BD34C /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E991E315FC8B00009BD34C /* MainStoryboard_iPhone.storyboard */; };
 		B8E991E815FC8B00009BD34C /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E991E615FC8B00009BD34C /* MainStoryboard_iPad.storyboard */; };
-		B8E991EB15FC8B00009BD34C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991EA15FC8B00009BD34C /* ViewController.m */; };
+		B8E991EB15FC8B00009BD34C /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */; };
 		B8E991F315FC8B00009BD34C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991F215FC8B00009BD34C /* SenTestingKit.framework */; };
 		B8E991F415FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
 		B8E991F515FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
@@ -47,8 +47,8 @@
 		B8E991E115FC8B00009BD34C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8E991E415FC8B00009BD34C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B8E991E715FC8B00009BD34C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		B8E991E915FC8B00009BD34C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B8E991EA15FC8B00009BD34C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B8E991E915FC8B00009BD34C /* BMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFirstViewController.h; sourceTree = "<group>"; };
+		B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
 		B8E991F115FC8B00009BD34C /* BluetoothMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E991F215FC8B00009BD34C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B8E991FA15FC8B00009BD34C /* BluetoothMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluetoothMusicTests-Info.plist"; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 				B8E991E115FC8B00009BD34C /* AppDelegate.m */,
 				B8E991E315FC8B00009BD34C /* MainStoryboard_iPhone.storyboard */,
 				B8E991E615FC8B00009BD34C /* MainStoryboard_iPad.storyboard */,
-				B8E991E915FC8B00009BD34C /* ViewController.h */,
-				B8E991EA15FC8B00009BD34C /* ViewController.m */,
+				B8E991E915FC8B00009BD34C /* BMFirstViewController.h */,
+				B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
 			);
 			path = BluetoothMusic;
@@ -268,7 +268,7 @@
 			files = (
 				B8E991DE15FC8B00009BD34C /* main.m in Sources */,
 				B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */,
-				B8E991EB15FC8B00009BD34C /* ViewController.m in Sources */,
+				B8E991EB15FC8B00009BD34C /* BMFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

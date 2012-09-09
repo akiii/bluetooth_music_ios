@@ -6,13 +6,13 @@
 //  Copyright (c) 2012年 Akifumi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BMFirstViewController.h"
 
-@interface ViewController ()
+@interface BMFirstViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BMFirstViewController
 
 - (void)viewDidLoad
 {
