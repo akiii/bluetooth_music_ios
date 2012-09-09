@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    float w = 200;
+    float h = 40;
+    
+    button.frame = CGRectMake((SCREEN_SIZE.width - w)/2, (SCREEN_SIZE.height - h)/2, w, h);
+    [button setTitle:@"connect" forState:UIControlStateNormal];
+    [self.view addSubview:button];
+
 }
 
 - (void)viewDidUnload
