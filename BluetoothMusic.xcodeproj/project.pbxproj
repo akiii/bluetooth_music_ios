@@ -21,6 +21,7 @@
 		B8E991F515FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
 		B8E991FD15FC8B00009BD34C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E991FB15FC8B00009BD34C /* InfoPlist.strings */; };
 		B8E9920015FC8B00009BD34C /* BluetoothMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991FF15FC8B00009BD34C /* BluetoothMusicTests.m */; };
+		B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E9920D15FC8C64009BD34C /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B8E991FC15FC8B00009BD34C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8E991FE15FC8B00009BD34C /* BluetoothMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothMusicTests.h; sourceTree = "<group>"; };
 		B8E991FF15FC8B00009BD34C /* BluetoothMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothMusicTests.m; sourceTree = "<group>"; };
+		B8E9920D15FC8C64009BD34C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */,
 				B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */,
 				B8E991D415FC8B00009BD34C /* Foundation.framework in Frameworks */,
 				B8E991D615FC8B00009BD34C /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +86,7 @@
 		B8E991C215FC8B00009BD34C = {
 			isa = PBXGroup;
 			children = (
+				B8E9920D15FC8C64009BD34C /* GameKit.framework */,
 				B8E991D715FC8B00009BD34C /* BluetoothMusic */,
 				B8E991F815FC8B00009BD34C /* BluetoothMusicTests */,
 				B8E991D015FC8B00009BD34C /* Frameworks */,
@@ -448,6 +452,7 @@
 				B8E9920515FC8B00009BD34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8E9920615FC8B00009BD34C /* Build configuration list for PBXNativeTarget "BluetoothMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +461,7 @@
 				B8E9920815FC8B00009BD34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
