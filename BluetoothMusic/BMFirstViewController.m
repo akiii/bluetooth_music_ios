@@ -7,25 +7,31 @@
 //
 
 #import "BMFirstViewController.h"
+#import "BMFirstMainView.h"
 
 @interface BMFirstViewController ()
-
+@property (nonatomic, strong) BMFirstMainView *mainView;
 @end
 
 @implementation BMFirstViewController
+@synthesize mainView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+        
 	// Do any additional setup after loading the view, typically from a nib.
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    float w = 200;
-    float h = 40;
+    self.mainView = [[BMFirstMainView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, SCREEN_SIZE.height)];
+    [self.view addSubview:self.mainView];
     
-    button.frame = CGRectMake((SCREEN_SIZE.width - w)/2, (SCREEN_SIZE.height - h)/2, w, h);
-    [button setTitle:@"connect" forState:UIControlStateNormal];
-    [self.view addSubview:button];
-
+    self.mainView.onPressedConnectButton = ^(){
+        [self.mainView notActivateButtons];
+        
+        GKPeerPickerController *picker = [[GKPeerPickerController alloc] init];
+        picker.delegate = self;
+        picker.connectionTypesMask = GKPeerPickerConnectionTypeNearby;
+        [picker show];
+    };
 }
 
 - (void)viewDidUnload
@@ -41,6 +47,10 @@
     } else {
         return YES;
     }
+}
+
+- (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker{
+    [self.mainView activateButtons];
 }
 
 @end

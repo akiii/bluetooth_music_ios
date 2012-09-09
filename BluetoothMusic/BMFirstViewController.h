@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
-@interface BMFirstViewController : UIViewController
+@interface BMFirstViewController : UIViewController <GKPeerPickerControllerDelegate>
 
 @end
