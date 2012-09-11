@@ -36,16 +36,6 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
-
 - (void)pressedConnectButton:(id)sender{
     if (self.onPressedConnectButton) self.onPressedConnectButton();
 }
@@ -60,6 +50,10 @@
     for (UIButton *b in self.buttons) {
         b.enabled = NO;
     }
+}
+
+- (void)dealloc{
+    self.buttons = nil;
 }
 
 @end
