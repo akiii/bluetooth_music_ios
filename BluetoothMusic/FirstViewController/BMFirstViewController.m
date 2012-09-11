@@ -58,9 +58,7 @@
     self.pickerController = nil;
     
     BMSecondViewController *secondViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
-    secondViewController.peerID = peerID;
-    secondViewController.session = session;
-    session.delegate = secondViewController;
+    [secondViewController setSession:session peerID:peerID];
     [self presentModalViewController:secondViewController animated:YES];
 }
 
