@@ -11,6 +11,7 @@
 		B8575E0615FF81F30019F7B2 /* BMFirstMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */; };
 		B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */; };
 		B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */; };
+		B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0A15FF82210019F7B2 /* BMSecondMainView.m */; };
 		B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
 		B8E991D415FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
 		B8E991D615FC8B00009BD34C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D515FC8B00009BD34C /* CoreGraphics.framework */; };
@@ -43,6 +44,8 @@
 		B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
 		B8575E0415FF81F30019F7B2 /* BMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondViewController.h; sourceTree = "<group>"; };
 		B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSecondViewController.m; sourceTree = "<group>"; };
+		B8575E0915FF82210019F7B2 /* BMSecondMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondMainView.h; sourceTree = "<group>"; };
+		B8575E0A15FF82210019F7B2 /* BMSecondMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSecondMainView.m; sourceTree = "<group>"; };
 		B8E991CD15FC8B00009BD34C /* BluetoothMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E991D115FC8B00009BD34C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8E991D315FC8B00009BD34C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,6 +107,8 @@
 			children = (
 				B8575E0415FF81F30019F7B2 /* BMSecondViewController.h */,
 				B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */,
+				B8575E0915FF82210019F7B2 /* BMSecondMainView.h */,
+				B8575E0A15FF82210019F7B2 /* BMSecondMainView.m */,
 			);
 			path = SecondViewController;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				B8575E0615FF81F30019F7B2 /* BMFirstMainView.m in Sources */,
 				B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */,
 				B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */,
+				B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
