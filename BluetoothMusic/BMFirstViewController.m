@@ -8,12 +8,15 @@
 
 #import "BMFirstViewController.h"
 #import "BMFirstMainView.h"
+#import "BMSecondViewController.h"
 
 @interface BMFirstViewController ()
 @property (nonatomic, strong) BMFirstMainView *mainView;
+@property (nonatomic, strong) GKPeerPickerController *pickerController;
 @end
 
 @implementation BMFirstViewController
+@synthesize pickerController;
 @synthesize mainView;
 
 - (void)viewDidLoad
@@ -27,10 +30,10 @@
     self.mainView.onPressedConnectButton = ^(){
         [self.mainView notActivateButtons];
         
-        GKPeerPickerController *picker = [[GKPeerPickerController alloc] init];
-        picker.delegate = self;
-        picker.connectionTypesMask = GKPeerPickerConnectionTypeNearby;
-        [picker show];
+        self.pickerController = [[GKPeerPickerController alloc] init];
+        self.pickerController.delegate = self;
+        self.pickerController.connectionTypesMask = GKPeerPickerConnectionTypeNearby;
+        [self.pickerController show];
     };
 }
 
@@ -50,11 +53,26 @@
 }
 
 - (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session{
-
+    [self.pickerController dismiss];
+    self.pickerController.delegate = nil;
+    self.pickerController = nil;
+    
+    BMSecondViewController *secondViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
+    secondViewController.peerID = peerID;
+    secondViewController.session = session;
+    session.delegate = secondViewController;
+    [self presentModalViewController:secondViewController animated:YES];
 }
 
 - (void)peerPickerControllerDidCancel:(GKPeerPickerController *)picker{
+    self.pickerController.delegate = nil;
+    self.pickerController = nil;
     [self.mainView activateButtons];
+}
+
+- (void)dealloc{
+    self.mainView = nil;
+    self.pickerController = nil;
 }
 
 @end

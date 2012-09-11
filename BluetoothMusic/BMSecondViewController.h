@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface BMSecondViewController : UIViewController
-
+@interface BMSecondViewController : UIViewController <GKSessionDelegate>
+@property (nonatomic, strong) NSString *peerID;
+@property (nonatomic, strong) GKSession *session;
 @end
