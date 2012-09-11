@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B823F3BD15FC98A800F30EF9 /* BMFirstMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */; };
-		B823F3C415FCA14A00F30EF9 /* BMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B823F3C315FCA14A00F30EF9 /* BMSecondViewController.m */; };
 		B823F3C615FCA17300F30EF9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */; };
+		B8575E0615FF81F30019F7B2 /* BMFirstMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */; };
+		B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */; };
+		B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */; };
 		B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
 		B8E991D415FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
 		B8E991D615FC8B00009BD34C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D515FC8B00009BD34C /* CoreGraphics.framework */; };
 		B8E991DC15FC8B00009BD34C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E991DA15FC8B00009BD34C /* InfoPlist.strings */; };
 		B8E991DE15FC8B00009BD34C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991DD15FC8B00009BD34C /* main.m */; };
 		B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991E115FC8B00009BD34C /* AppDelegate.m */; };
-		B8E991EB15FC8B00009BD34C /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */; };
 		B8E991F315FC8B00009BD34C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991F215FC8B00009BD34C /* SenTestingKit.framework */; };
 		B8E991F415FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
 		B8E991F515FC8B00009BD34C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D315FC8B00009BD34C /* Foundation.framework */; };
@@ -36,11 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B823F3BB15FC98A800F30EF9 /* BMFirstMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstMainView.h; sourceTree = "<group>"; };
-		B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstMainView.m; sourceTree = "<group>"; };
-		B823F3C215FCA14A00F30EF9 /* BMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondViewController.h; sourceTree = "<group>"; };
-		B823F3C315FCA14A00F30EF9 /* BMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSecondViewController.m; sourceTree = "<group>"; };
 		B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B8575DFF15FF81F30019F7B2 /* BMFirstMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstMainView.h; sourceTree = "<group>"; };
+		B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstMainView.m; sourceTree = "<group>"; };
+		B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstViewController.h; sourceTree = "<group>"; };
+		B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
+		B8575E0415FF81F30019F7B2 /* BMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondViewController.h; sourceTree = "<group>"; };
+		B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSecondViewController.m; sourceTree = "<group>"; };
 		B8E991CD15FC8B00009BD34C /* BluetoothMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BluetoothMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E991D115FC8B00009BD34C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8E991D315FC8B00009BD34C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,8 +53,6 @@
 		B8E991DF15FC8B00009BD34C /* BluetoothMusic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BluetoothMusic-Prefix.pch"; sourceTree = "<group>"; };
 		B8E991E015FC8B00009BD34C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8E991E115FC8B00009BD34C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B8E991E915FC8B00009BD34C /* BMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMFirstViewController.h; sourceTree = "<group>"; };
-		B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
 		B8E991F115FC8B00009BD34C /* BluetoothMusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothMusicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E991F215FC8B00009BD34C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		B8E991FA15FC8B00009BD34C /* BluetoothMusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BluetoothMusicTests-Info.plist"; sourceTree = "<group>"; };
@@ -88,6 +88,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8575DFE15FF81F30019F7B2 /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B8575DFF15FF81F30019F7B2 /* BMFirstMainView.h */,
+				B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */,
+				B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */,
+				B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */,
+			);
+			path = FirstViewController;
+			sourceTree = "<group>";
+		};
+		B8575E0315FF81F30019F7B2 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B8575E0415FF81F30019F7B2 /* BMSecondViewController.h */,
+				B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */,
+			);
+			path = SecondViewController;
+			sourceTree = "<group>";
+		};
 		B8E991C215FC8B00009BD34C = {
 			isa = PBXGroup;
 			children = (
@@ -125,12 +145,8 @@
 			children = (
 				B8E991E015FC8B00009BD34C /* AppDelegate.h */,
 				B8E991E115FC8B00009BD34C /* AppDelegate.m */,
-				B8E991E915FC8B00009BD34C /* BMFirstViewController.h */,
-				B8E991EA15FC8B00009BD34C /* BMFirstViewController.m */,
-				B823F3BB15FC98A800F30EF9 /* BMFirstMainView.h */,
-				B823F3BC15FC98A800F30EF9 /* BMFirstMainView.m */,
-				B823F3C215FCA14A00F30EF9 /* BMSecondViewController.h */,
-				B823F3C315FCA14A00F30EF9 /* BMSecondViewController.m */,
+				B8575DFE15FF81F30019F7B2 /* FirstViewController */,
+				B8575E0315FF81F30019F7B2 /* SecondViewController */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
 			);
 			path = BluetoothMusic;
@@ -274,9 +290,9 @@
 			files = (
 				B8E991DE15FC8B00009BD34C /* main.m in Sources */,
 				B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */,
-				B8E991EB15FC8B00009BD34C /* BMFirstViewController.m in Sources */,
-				B823F3BD15FC98A800F30EF9 /* BMFirstMainView.m in Sources */,
-				B823F3C415FCA14A00F30EF9 /* BMSecondViewController.m in Sources */,
+				B8575E0615FF81F30019F7B2 /* BMFirstMainView.m in Sources */,
+				B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */,
+				B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
