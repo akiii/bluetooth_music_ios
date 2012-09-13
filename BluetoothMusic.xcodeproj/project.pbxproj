@@ -24,6 +24,7 @@
 		B8E9920015FC8B00009BD34C /* BluetoothMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991FF15FC8B00009BD34C /* BluetoothMusicTests.m */; };
 		B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E9920D15FC8C64009BD34C /* GameKit.framework */; };
 		B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */; };
+		B8FB146E16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		B8E9920D15FC8C64009BD34C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		B8FB146816025F5000BFB6B5 /* BMBluetoothUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBluetoothUser.h; sourceTree = "<group>"; };
 		B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBluetoothUser.m; sourceTree = "<group>"; };
+		B8FB146C16026B7700BFB6B5 /* BMRequestedConnectionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRequestedConnectionAlertView.h; sourceTree = "<group>"; };
+		B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRequestedConnectionAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 			children = (
 				B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */,
 				B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */,
+				B8FB146C16026B7700BFB6B5 /* BMRequestedConnectionAlertView.h */,
+				B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */,
 			);
 			path = FirstViewController;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */,
 				B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */,
 				B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */,
+				B8FB146E16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
