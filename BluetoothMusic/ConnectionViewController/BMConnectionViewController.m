@@ -26,6 +26,9 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        UIImage *tabBarItemImage = [UIImage imageNamed:@"setting.png"];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"conn" image:tabBarItemImage tag:0];
+        
         self.bluetoothUsers = [NSMutableArray array];
     }
     return self;
@@ -36,9 +39,6 @@
     [super viewDidLoad];
         
 	// Do any additional setup after loading the view, typically from a nib.
-    UIImage *tabBarItemImage = [UIImage imageNamed:@"setting.png"];
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"conn" image:tabBarItemImage tag:0];
-
     UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, NAVIGATION_SIZE.height)];
     [self.view addSubview:bar];
 
