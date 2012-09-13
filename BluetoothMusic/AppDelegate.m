@@ -7,14 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "BMFirstViewController.h"
+#import "BMRootViewController.h"
 
 @interface AppDelegate()
-@property (nonatomic, strong) BMFirstViewController *firstViewController;
+@property (nonatomic, strong) BMRootViewController *rootViewController;
 @end
 
 @implementation AppDelegate
-@synthesize firstViewController;
+@synthesize rootViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -24,8 +24,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.firstViewController = [[BMFirstViewController alloc] initWithNibName:nil bundle:nil];
-    [self.window addSubview:self.firstViewController.view];
+    self.rootViewController = [[BMRootViewController alloc] initWithNibName:nil bundle:nil];    
+    [self.window addSubview:self.rootViewController.view];
     return YES;
 }
 							
@@ -58,6 +58,10 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return NO;
+}
+
+- (void)dealloc{
+    self.rootViewController = nil;
 }
 
 @end
