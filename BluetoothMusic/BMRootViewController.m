@@ -11,12 +11,12 @@
 #import "BMSecondViewController.h"
 
 @interface BMRootViewController ()
-@property (nonatomic, strong) BMConnectionViewController *settingViewController;
+@property (nonatomic, strong) BMConnectionViewController *connectionViewController;
 @property (nonatomic, strong) BMSecondViewController *musicViewController;
 @end
 
 @implementation BMRootViewController
-@synthesize settingViewController;
+@synthesize connectionViewController;
 @synthesize musicViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,10 +32,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.settingViewController = [[BMConnectionViewController alloc] initWithNibName:nil bundle:nil];
+    self.connectionViewController = [[BMConnectionViewController alloc] initWithNibName:nil bundle:nil];
     self.musicViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
     
-    [self setViewControllers:[NSArray arrayWithObjects:self.settingViewController, self.musicViewController, nil] animated:YES];
+    [self setViewControllers:[NSArray arrayWithObjects:self.connectionViewController, self.musicViewController, nil] animated:YES];
 }
 
 - (void)viewDidUnload
@@ -50,7 +50,7 @@
 }
 
 - (void)dealloc{
-    self.settingViewController = nil;
+    self.connectionViewController = nil;
     self.musicViewController = nil;
 }
 
