@@ -25,6 +25,10 @@
 		B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E9920D15FC8C64009BD34C /* GameKit.framework */; };
 		B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */; };
 		B8FB146E16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */; };
+		B8FB147816027CE100BFB6B5 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147416027CE100BFB6B5 /* setting@2x.png */; };
+		B8FB147916027CE100BFB6B5 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147516027CE100BFB6B5 /* setting.png */; };
+		B8FB147A16027CE100BFB6B5 /* music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147616027CE100BFB6B5 /* music@2x.png */; };
+		B8FB147B16027CE100BFB6B5 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147716027CE100BFB6B5 /* music.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,10 @@
 		B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBluetoothUser.m; sourceTree = "<group>"; };
 		B8FB146C16026B7700BFB6B5 /* BMRequestedConnectionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRequestedConnectionAlertView.h; sourceTree = "<group>"; };
 		B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRequestedConnectionAlertView.m; sourceTree = "<group>"; };
+		B8FB147416027CE100BFB6B5 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
+		B8FB147516027CE100BFB6B5 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
+		B8FB147616027CE100BFB6B5 /* music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music@2x.png"; sourceTree = "<group>"; };
+		B8FB147716027CE100BFB6B5 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,7 @@
 		B8E991D815FC8B00009BD34C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B8FB147316027CDC00BFB6B5 /* Resources */,
 				B8E991D915FC8B00009BD34C /* BluetoothMusic-Info.plist */,
 				B8E991DA15FC8B00009BD34C /* InfoPlist.strings */,
 				B8E991DD15FC8B00009BD34C /* main.m */,
@@ -190,6 +199,17 @@
 				B8E991FB15FC8B00009BD34C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8FB147316027CDC00BFB6B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB147416027CE100BFB6B5 /* setting@2x.png */,
+				B8FB147516027CE100BFB6B5 /* setting.png */,
+				B8FB147616027CE100BFB6B5 /* music@2x.png */,
+				B8FB147716027CE100BFB6B5 /* music.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8E991DC15FC8B00009BD34C /* InfoPlist.strings in Resources */,
+				B8FB147816027CE100BFB6B5 /* setting@2x.png in Resources */,
+				B8FB147916027CE100BFB6B5 /* setting.png in Resources */,
+				B8FB147A16027CE100BFB6B5 /* music@2x.png in Resources */,
+				B8FB147B16027CE100BFB6B5 /* music.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
