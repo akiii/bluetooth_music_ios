@@ -36,13 +36,16 @@
     [super viewDidLoad];
         
 	// Do any additional setup after loading the view, typically from a nib.
-    UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, 44)];
+    UIImage *tabBarItemImage = [UIImage imageNamed:@"setting.png"];
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"conn" image:tabBarItemImage tag:0];
+
+    UINavigationBar *bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, NAVIGATION_SIZE.height)];
     [self.view addSubview:bar];
 
     UINavigationItem *title = [[UINavigationItem alloc] initWithTitle:@"bluetooth music"];
     [bar setItems:[NSArray arrayWithObjects:title, nil]];
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, bar.bounds.size.height, SCREEN_SIZE.width, SCREEN_SIZE.height - bar.bounds.size.height) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, bar.bounds.size.height, SCREEN_SIZE.width, SCREEN_SIZE.height - TOOL_BAR_SIZE.height - bar.bounds.size.height - TAB_BAR_SIZE.height) style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.view addSubview:self.tableView];
