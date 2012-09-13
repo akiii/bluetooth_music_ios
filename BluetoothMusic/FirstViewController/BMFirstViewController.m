@@ -8,18 +8,21 @@
 
 #import "BMFirstViewController.h"
 #import "BMBluetoothUser.h"
+#import "BMRequestedConnectionAlertView.h"
 #import "BMSecondViewController.h"
 
 @interface BMFirstViewController ()
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) GKSession *mySession;
 @property (nonatomic, strong) NSMutableArray *bluetoothUsers;
+@property (nonatomic, strong) BMRequestedConnectionAlertView *alert;
 @end
 
 @implementation BMFirstViewController
 @synthesize tableView;
 @synthesize mySession;
 @synthesize bluetoothUsers;
+@synthesize alert;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -154,25 +157,23 @@
 }
 
 - (void)session:(GKSession *)session didReceiveConnectionRequestFromPeer:(NSString *)peerID{
-    [self.mySession acceptConnectionFromPeer:peerID error:nil];
-    [self.tableView reloadData];
-//    BMBluetoothUser *u = [self userFromPeerID:peerID];
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"connect" message:[NSString stringWithFormat:@"%@からリクエストがあります。接続しますか？", u.displayName] delegate:self cancelButtonTitle:@"no" otherButtonTitles:@"yes", nil];
-//    [alert show];
-}
-
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-//    alertView.message
-//    if (buttonIndex == 0) {
-//        NSLog(@"no");
-//    }else {
-//        [self.mySession acceptConnectionFromPeer:<#(NSString *)#> error:<#(NSError *__autoreleasing *)#>]
-//    }
+    BMBluetoothUser *u = [self userFromPeerID:peerID];
+    self.alert = [[BMRequestedConnectionAlertView alloc] init];
+    
+    [self.alert showAlertWithTitle:@"connect" message:[NSString stringWithFormat:@"%@からリクエストがあります。接続しますか？", u.displayName] onPressedYES:^{
+        self.alert = nil;
+        [self.mySession acceptConnectionFromPeer:peerID error:nil];
+        [self.tableView reloadData];
+    } onPressedNO:^{
+        self.alert = nil;
+    }];
 }
 
 - (void)dealloc{
     self.tableView = nil;
+    self.mySession = nil;
     self.bluetoothUsers = nil;
+    self.alert = nil;
 }
 
 @end
