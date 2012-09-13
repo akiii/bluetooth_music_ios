@@ -35,13 +35,19 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.delegate = self;
+
     self.connectionViewController = [[BMConnectionViewController alloc] initWithNibName:nil bundle:nil];
     self.musicViewController = [[BMMusicViewController alloc] initWithNibName:nil bundle:nil];
     self.secondViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
-    
-    self.delegate = self;
-    
+        
     [self setViewControllers:[NSArray arrayWithObjects:self.connectionViewController, self.musicViewController, self.secondViewController, nil] animated:NO];
+    
+    __block BMRootViewController *_self = self;
+    self.musicViewController.onPressedCancelButton = ^(){
+        [_self changeMyTabBarState];
+        _self.selectedIndex = 0;
+    };
 }
 
 - (void)viewDidUnload
@@ -60,9 +66,17 @@
     for (UIView *view in self.view.subviews) {
         CGRect rect = view.frame;
         if ([view isKindOfClass:[UITabBar class]]) {
-            rect.origin.y = SCREEN_SIZE.height;
+            if (rect.origin.y == SCREEN_SIZE.height) {
+                rect.origin.y = SCREEN_SIZE.height - TAB_BAR_SIZE.height;
+            }else {
+                rect.origin.y = SCREEN_SIZE.height;
+            }
         }else {
-            rect.size.height = SCREEN_SIZE.height;
+            if (rect.size.height == SCREEN_SIZE.height) {
+                rect.size.height = SCREEN_SIZE.height - TAB_BAR_SIZE.height;
+            }else {
+                rect.size.height = SCREEN_SIZE.height;
+            }
         }
         view.frame = rect;
     }
