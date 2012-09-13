@@ -8,16 +8,19 @@
 
 #import "BMRootViewController.h"
 #import "BMConnectionViewController.h"
+#import "BMMusicViewController.h"
 #import "BMSecondViewController.h"
 
 @interface BMRootViewController ()
 @property (nonatomic, strong) BMConnectionViewController *connectionViewController;
-@property (nonatomic, strong) BMSecondViewController *musicViewController;
+@property (nonatomic, strong) BMMusicViewController *musicViewController;
+@property (nonatomic, strong) BMSecondViewController *secondViewController;
 @end
 
 @implementation BMRootViewController
 @synthesize connectionViewController;
 @synthesize musicViewController;
+@synthesize secondViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,9 +36,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     self.connectionViewController = [[BMConnectionViewController alloc] initWithNibName:nil bundle:nil];
-    self.musicViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
+    self.musicViewController = [[BMMusicViewController alloc] initWithNibName:nil bundle:nil];
+    self.secondViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
     
-    [self setViewControllers:[NSArray arrayWithObjects:self.connectionViewController, self.musicViewController, nil] animated:YES];
+    [self setViewControllers:[NSArray arrayWithObjects:self.connectionViewController, self.musicViewController, self.secondViewController, nil] animated:NO];
 }
 
 - (void)viewDidUnload
@@ -52,6 +56,7 @@
 - (void)dealloc{
     self.connectionViewController = nil;
     self.musicViewController = nil;
+    self.secondViewController = nil;
 }
 
 @end
