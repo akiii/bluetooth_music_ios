@@ -20,7 +20,7 @@
     if (self) {
         // Custom initialization
         UIImage *tabBarItemImage = [UIImage imageNamed:@"music.png"];
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"music" image:tabBarItemImage tag:1];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"music" image:tabBarItemImage tag:0];
     }
     return self;
 }
