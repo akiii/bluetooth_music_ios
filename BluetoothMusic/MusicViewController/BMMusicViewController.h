@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface BMMusicViewController : UIViewController
+@interface BMMusicViewController : UIViewController <MPMediaPickerControllerDelegate>
 
 @end

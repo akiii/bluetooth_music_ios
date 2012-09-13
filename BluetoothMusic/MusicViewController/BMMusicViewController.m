@@ -29,6 +29,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    MPMediaPickerController *mediaPickerController = [[MPMediaPickerController alloc] initWithMediaTypes:MPMediaTypeMusic];
+    mediaPickerController.view.frame = CGRectMake(0, 0, SCREEN_SIZE.width, SCREEN_SIZE.height - TOOL_BAR_SIZE.height);
+    mediaPickerController.delegate = self;
+    [self.view addSubview:mediaPickerController.view];    
 }
 
 - (void)viewDidUnload
