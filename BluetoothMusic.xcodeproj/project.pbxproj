@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B823F3C615FCA17300F30EF9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */; };
-		B8575E0615FF81F30019F7B2 /* BMFirstMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */; };
 		B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */; };
 		B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */; };
 		B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0A15FF82210019F7B2 /* BMSecondMainView.m */; };
@@ -24,6 +23,7 @@
 		B8E991FD15FC8B00009BD34C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8E991FB15FC8B00009BD34C /* InfoPlist.strings */; };
 		B8E9920015FC8B00009BD34C /* BluetoothMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991FF15FC8B00009BD34C /* BluetoothMusicTests.m */; };
 		B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E9920D15FC8C64009BD34C /* GameKit.framework */; };
+		B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 
 /* Begin PBXFileReference section */
 		B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B8575DFF15FF81F30019F7B2 /* BMFirstMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstMainView.h; sourceTree = "<group>"; };
-		B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstMainView.m; sourceTree = "<group>"; };
 		B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstViewController.h; sourceTree = "<group>"; };
 		B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
 		B8575E0415FF81F30019F7B2 /* BMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondViewController.h; sourceTree = "<group>"; };
@@ -63,6 +61,8 @@
 		B8E991FE15FC8B00009BD34C /* BluetoothMusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BluetoothMusicTests.h; sourceTree = "<group>"; };
 		B8E991FF15FC8B00009BD34C /* BluetoothMusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothMusicTests.m; sourceTree = "<group>"; };
 		B8E9920D15FC8C64009BD34C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B8FB146816025F5000BFB6B5 /* BMBluetoothUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBluetoothUser.h; sourceTree = "<group>"; };
+		B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBluetoothUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,6 @@
 		B8575DFE15FF81F30019F7B2 /* FirstViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B8575DFF15FF81F30019F7B2 /* BMFirstMainView.h */,
-				B8575E0015FF81F30019F7B2 /* BMFirstMainView.m */,
 				B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */,
 				B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */,
 			);
@@ -150,6 +148,8 @@
 			children = (
 				B8E991E015FC8B00009BD34C /* AppDelegate.h */,
 				B8E991E115FC8B00009BD34C /* AppDelegate.m */,
+				B8FB146816025F5000BFB6B5 /* BMBluetoothUser.h */,
+				B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */,
 				B8575DFE15FF81F30019F7B2 /* FirstViewController */,
 				B8575E0315FF81F30019F7B2 /* SecondViewController */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
@@ -295,10 +295,10 @@
 			files = (
 				B8E991DE15FC8B00009BD34C /* main.m in Sources */,
 				B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */,
-				B8575E0615FF81F30019F7B2 /* BMFirstMainView.m in Sources */,
 				B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */,
 				B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */,
 				B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */,
+				B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
