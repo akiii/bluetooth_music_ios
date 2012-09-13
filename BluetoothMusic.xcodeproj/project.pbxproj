@@ -30,6 +30,7 @@
 		B8FB147E16027D5300BFB6B5 /* BMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */; };
 		B8FB14841602861D00BFB6B5 /* BMConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB14811602861D00BFB6B5 /* BMConnectionViewController.m */; };
 		B8FB14851602861D00BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB14831602861D00BFB6B5 /* BMRequestedConnectionAlertView.m */; };
+		B8FB1489160287E500BFB6B5 /* BMMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB1488160287E500BFB6B5 /* BMMusicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		B8FB14811602861D00BFB6B5 /* BMConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMConnectionViewController.m; sourceTree = "<group>"; };
 		B8FB14821602861D00BFB6B5 /* BMRequestedConnectionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRequestedConnectionAlertView.h; sourceTree = "<group>"; };
 		B8FB14831602861D00BFB6B5 /* BMRequestedConnectionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRequestedConnectionAlertView.m; sourceTree = "<group>"; };
+		B8FB1487160287E500BFB6B5 /* BMMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMMusicViewController.h; sourceTree = "<group>"; };
+		B8FB1488160287E500BFB6B5 /* BMMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMMusicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 				B8FB147C16027D5300BFB6B5 /* BMRootViewController.h */,
 				B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */,
 				B8FB147F1602861D00BFB6B5 /* ConnectionViewController */,
+				B8FB1486160287D700BFB6B5 /* MusicViewController */,
 				B8575E0315FF81F30019F7B2 /* SecondViewController */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
 			);
@@ -215,6 +219,15 @@
 				B8FB14831602861D00BFB6B5 /* BMRequestedConnectionAlertView.m */,
 			);
 			path = ConnectionViewController;
+			sourceTree = "<group>";
+		};
+		B8FB1486160287D700BFB6B5 /* MusicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB1487160287E500BFB6B5 /* BMMusicViewController.h */,
+				B8FB1488160287E500BFB6B5 /* BMMusicViewController.m */,
+			);
+			path = MusicViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +348,7 @@
 				B8FB147E16027D5300BFB6B5 /* BMRootViewController.m in Sources */,
 				B8FB14841602861D00BFB6B5 /* BMConnectionViewController.m in Sources */,
 				B8FB14851602861D00BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */,
+				B8FB1489160287E500BFB6B5 /* BMMusicViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
