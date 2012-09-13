@@ -39,6 +39,8 @@
     self.musicViewController = [[BMMusicViewController alloc] initWithNibName:nil bundle:nil];
     self.secondViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
     
+    self.delegate = self;
+    
     [self setViewControllers:[NSArray arrayWithObjects:self.connectionViewController, self.musicViewController, self.secondViewController, nil] animated:NO];
 }
 
@@ -48,9 +50,22 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    if ([viewController isEqual:self.musicViewController]) {
+        [self changeMyTabBarState];
+    }
+}
+
+- (void)changeMyTabBarState{
+    for (UIView *view in self.view.subviews) {
+        CGRect rect = view.frame;
+        if ([view isKindOfClass:[UITabBar class]]) {
+            rect.origin.y = SCREEN_SIZE.height;
+        }else {
+            rect.size.height = SCREEN_SIZE.height;
+        }
+        view.frame = rect;
+    }
 }
 
 - (void)dealloc{
