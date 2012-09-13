@@ -7,11 +7,11 @@
 //
 
 #import "BMRootViewController.h"
-#import "BMFirstViewController.h"
+#import "BMConnectionViewController.h"
 #import "BMSecondViewController.h"
 
 @interface BMRootViewController ()
-@property (nonatomic, strong) BMFirstViewController *settingViewController;
+@property (nonatomic, strong) BMConnectionViewController *settingViewController;
 @property (nonatomic, strong) BMSecondViewController *musicViewController;
 @end
 
@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.settingViewController = [[BMFirstViewController alloc] initWithNibName:nil bundle:nil];
+    self.settingViewController = [[BMConnectionViewController alloc] initWithNibName:nil bundle:nil];
     self.musicViewController = [[BMSecondViewController alloc] initWithNibName:nil bundle:nil];
     
     [self setViewControllers:[NSArray arrayWithObjects:self.settingViewController, self.musicViewController, nil] animated:YES];

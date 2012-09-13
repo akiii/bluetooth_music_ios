@@ -6,19 +6,19 @@
 //  Copyright (c) 2012年 Akifumi. All rights reserved.
 //
 
-#import "BMFirstViewController.h"
+#import "BMConnectionViewController.h"
 #import "BMBluetoothUser.h"
 #import "BMRequestedConnectionAlertView.h"
 #import "BMSecondViewController.h"
 
-@interface BMFirstViewController ()
+@interface BMConnectionViewController ()
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) GKSession *mySession;
 @property (nonatomic, strong) NSMutableArray *bluetoothUsers;
 @property (nonatomic, strong) BMRequestedConnectionAlertView *alert;
 @end
 
-@implementation BMFirstViewController
+@implementation BMConnectionViewController
 @synthesize tableView;
 @synthesize mySession;
 @synthesize bluetoothUsers;

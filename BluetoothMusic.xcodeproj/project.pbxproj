@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B823F3C615FCA17300F30EF9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */; };
-		B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */; };
 		B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */; };
 		B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8575E0A15FF82210019F7B2 /* BMSecondMainView.m */; };
 		B8E991D215FC8B00009BD34C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E991D115FC8B00009BD34C /* UIKit.framework */; };
@@ -24,12 +23,13 @@
 		B8E9920015FC8B00009BD34C /* BluetoothMusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E991FF15FC8B00009BD34C /* BluetoothMusicTests.m */; };
 		B8E9920E15FC8C64009BD34C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E9920D15FC8C64009BD34C /* GameKit.framework */; };
 		B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */; };
-		B8FB146E16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */; };
 		B8FB147816027CE100BFB6B5 /* setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147416027CE100BFB6B5 /* setting@2x.png */; };
 		B8FB147916027CE100BFB6B5 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147516027CE100BFB6B5 /* setting.png */; };
 		B8FB147A16027CE100BFB6B5 /* music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147616027CE100BFB6B5 /* music@2x.png */; };
 		B8FB147B16027CE100BFB6B5 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147716027CE100BFB6B5 /* music.png */; };
 		B8FB147E16027D5300BFB6B5 /* BMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */; };
+		B8FB14841602861D00BFB6B5 /* BMConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB14811602861D00BFB6B5 /* BMConnectionViewController.m */; };
+		B8FB14851602861D00BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB14831602861D00BFB6B5 /* BMRequestedConnectionAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,6 @@
 
 /* Begin PBXFileReference section */
 		B823F3C515FCA17300F30EF9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMFirstViewController.h; sourceTree = "<group>"; };
-		B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMFirstViewController.m; sourceTree = "<group>"; };
 		B8575E0415FF81F30019F7B2 /* BMSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondViewController.h; sourceTree = "<group>"; };
 		B8575E0515FF81F30019F7B2 /* BMSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMSecondViewController.m; sourceTree = "<group>"; };
 		B8575E0915FF82210019F7B2 /* BMSecondMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMSecondMainView.h; sourceTree = "<group>"; };
@@ -69,14 +67,16 @@
 		B8E9920D15FC8C64009BD34C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		B8FB146816025F5000BFB6B5 /* BMBluetoothUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMBluetoothUser.h; sourceTree = "<group>"; };
 		B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMBluetoothUser.m; sourceTree = "<group>"; };
-		B8FB146C16026B7700BFB6B5 /* BMRequestedConnectionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRequestedConnectionAlertView.h; sourceTree = "<group>"; };
-		B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRequestedConnectionAlertView.m; sourceTree = "<group>"; };
 		B8FB147416027CE100BFB6B5 /* setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting@2x.png"; sourceTree = "<group>"; };
 		B8FB147516027CE100BFB6B5 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		B8FB147616027CE100BFB6B5 /* music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music@2x.png"; sourceTree = "<group>"; };
 		B8FB147716027CE100BFB6B5 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
 		B8FB147C16027D5300BFB6B5 /* BMRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootViewController.h; sourceTree = "<group>"; };
 		B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRootViewController.m; sourceTree = "<group>"; };
+		B8FB14801602861D00BFB6B5 /* BMConnectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMConnectionViewController.h; sourceTree = "<group>"; };
+		B8FB14811602861D00BFB6B5 /* BMConnectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMConnectionViewController.m; sourceTree = "<group>"; };
+		B8FB14821602861D00BFB6B5 /* BMRequestedConnectionAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRequestedConnectionAlertView.h; sourceTree = "<group>"; };
+		B8FB14831602861D00BFB6B5 /* BMRequestedConnectionAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRequestedConnectionAlertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,17 +105,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B8575DFE15FF81F30019F7B2 /* FirstViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B8575E0115FF81F30019F7B2 /* BMFirstViewController.h */,
-				B8575E0215FF81F30019F7B2 /* BMFirstViewController.m */,
-				B8FB146C16026B7700BFB6B5 /* BMRequestedConnectionAlertView.h */,
-				B8FB146D16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m */,
-			);
-			path = FirstViewController;
-			sourceTree = "<group>";
-		};
 		B8575E0315FF81F30019F7B2 /* SecondViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +157,7 @@
 				B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */,
 				B8FB147C16027D5300BFB6B5 /* BMRootViewController.h */,
 				B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */,
-				B8575DFE15FF81F30019F7B2 /* FirstViewController */,
+				B8FB147F1602861D00BFB6B5 /* ConnectionViewController */,
 				B8575E0315FF81F30019F7B2 /* SecondViewController */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
 			);
@@ -215,6 +204,17 @@
 				B8FB147716027CE100BFB6B5 /* music.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8FB147F1602861D00BFB6B5 /* ConnectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB14801602861D00BFB6B5 /* BMConnectionViewController.h */,
+				B8FB14811602861D00BFB6B5 /* BMConnectionViewController.m */,
+				B8FB14821602861D00BFB6B5 /* BMRequestedConnectionAlertView.h */,
+				B8FB14831602861D00BFB6B5 /* BMRequestedConnectionAlertView.m */,
+			);
+			path = ConnectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,12 +329,12 @@
 			files = (
 				B8E991DE15FC8B00009BD34C /* main.m in Sources */,
 				B8E991E215FC8B00009BD34C /* AppDelegate.m in Sources */,
-				B8575E0715FF81F30019F7B2 /* BMFirstViewController.m in Sources */,
 				B8575E0815FF81F30019F7B2 /* BMSecondViewController.m in Sources */,
 				B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */,
 				B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */,
-				B8FB146E16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */,
 				B8FB147E16027D5300BFB6B5 /* BMRootViewController.m in Sources */,
+				B8FB14841602861D00BFB6B5 /* BMConnectionViewController.m in Sources */,
+				B8FB14851602861D00BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

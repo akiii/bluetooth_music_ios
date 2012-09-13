@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
-@interface BMFirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, GKSessionDelegate>
+@interface BMConnectionViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, GKSessionDelegate>
 @end
