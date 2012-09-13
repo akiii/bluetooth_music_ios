@@ -9,7 +9,12 @@
 #import "AppDelegate.h"
 #import "BMFirstViewController.h"
 
+@interface AppDelegate()
+@property (nonatomic, strong) BMFirstViewController *firstViewController;
+@end
+
 @implementation AppDelegate
+@synthesize firstViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -19,7 +24,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [self.window addSubview:[[BMFirstViewController alloc] initWithNibName:nil bundle:nil].view];
+    self.firstViewController = [[BMFirstViewController alloc] initWithNibName:nil bundle:nil];
+    [self.window addSubview:self.firstViewController.view];
     return YES;
 }
 							
@@ -48,6 +54,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return NO;
 }
 
 @end
