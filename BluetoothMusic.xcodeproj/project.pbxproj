@@ -29,6 +29,7 @@
 		B8FB147916027CE100BFB6B5 /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147516027CE100BFB6B5 /* setting.png */; };
 		B8FB147A16027CE100BFB6B5 /* music@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147616027CE100BFB6B5 /* music@2x.png */; };
 		B8FB147B16027CE100BFB6B5 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = B8FB147716027CE100BFB6B5 /* music.png */; };
+		B8FB147E16027D5300BFB6B5 /* BMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		B8FB147516027CE100BFB6B5 /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		B8FB147616027CE100BFB6B5 /* music@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music@2x.png"; sourceTree = "<group>"; };
 		B8FB147716027CE100BFB6B5 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		B8FB147C16027D5300BFB6B5 /* BMRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMRootViewController.h; sourceTree = "<group>"; };
+		B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 				B8E991E115FC8B00009BD34C /* AppDelegate.m */,
 				B8FB146816025F5000BFB6B5 /* BMBluetoothUser.h */,
 				B8FB146916025F5000BFB6B5 /* BMBluetoothUser.m */,
+				B8FB147C16027D5300BFB6B5 /* BMRootViewController.h */,
+				B8FB147D16027D5300BFB6B5 /* BMRootViewController.m */,
 				B8575DFE15FF81F30019F7B2 /* FirstViewController */,
 				B8575E0315FF81F30019F7B2 /* SecondViewController */,
 				B8E991D815FC8B00009BD34C /* Supporting Files */,
@@ -329,6 +334,7 @@
 				B8575E0B15FF82210019F7B2 /* BMSecondMainView.m in Sources */,
 				B8FB146A16025F5000BFB6B5 /* BMBluetoothUser.m in Sources */,
 				B8FB146E16026B7700BFB6B5 /* BMRequestedConnectionAlertView.m in Sources */,
+				B8FB147E16027D5300BFB6B5 /* BMRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
