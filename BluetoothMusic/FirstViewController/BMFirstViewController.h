@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
 
-@interface BMFirstViewController : UIViewController <GKPeerPickerControllerDelegate>
-
+@interface BMFirstViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, GKSessionDelegate>
 @end
