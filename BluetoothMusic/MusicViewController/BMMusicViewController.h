@@ -10,5 +10,5 @@
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface BMMusicViewController : UIViewController <MPMediaPickerControllerDelegate>
-
+@property (nonatomic, strong) void (^onPressedCancelButton)();
 @end

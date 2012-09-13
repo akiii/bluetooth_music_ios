@@ -9,10 +9,12 @@
 #import "BMMusicViewController.h"
 
 @interface BMMusicViewController ()
-
+@property (nonatomic, strong) MPMediaPickerController *mediaPickerController;
 @end
 
 @implementation BMMusicViewController
+@synthesize onPressedCancelButton;
+@synthesize mediaPickerController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,16 +31,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    MPMediaPickerController *mediaPickerController = [[MPMediaPickerController alloc] initWithMediaTypes:MPMediaTypeMusic];
-    mediaPickerController.view.frame = CGRectMake(0, 0, SCREEN_SIZE.width, SCREEN_SIZE.height - TOOL_BAR_SIZE.height);
-    mediaPickerController.delegate = self;
-    [self.view addSubview:mediaPickerController.view];    
+    self.mediaPickerController = [[MPMediaPickerController alloc] initWithMediaTypes:MPMediaTypeMusic];
+    self.mediaPickerController.delegate = self;
+    self.mediaPickerController.view.frame = CGRectMake(0, 0, SCREEN_SIZE.width, SCREEN_SIZE.height - TOOL_BAR_SIZE.height);
+    [self.view addSubview:mediaPickerController.view];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+}
+
+- (void)mediaPicker:(MPMediaPickerController *)mediaPicker didPickMediaItems:(MPMediaItemCollection *)mediaItemCollection{
+
+}
+
+- (void)mediaPickerDidCancel:(MPMediaPickerController *)mediaPicker{
+    if (self.onPressedCancelButton) self.onPressedCancelButton();
+}
+
+- (void)dealloc{
+    self.mediaPickerController = nil;
+    self.onPressedCancelButton = nil;
 }
 
 @end
