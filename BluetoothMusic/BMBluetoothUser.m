@@ -10,4 +10,9 @@
 
 @implementation BMBluetoothUser
 
+- (void)dealloc{
+    self.displayName = nil;
+    self.peerID = nil;
+}
+
 @end
