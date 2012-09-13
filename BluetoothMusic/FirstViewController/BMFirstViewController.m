@@ -165,6 +165,9 @@
         [self.mySession acceptConnectionFromPeer:peerID error:nil];
         [self.tableView reloadData];
     } onPressedNO:^{
+        [self.mySession denyConnectionFromPeer:peerID];
+        ((BMBluetoothUser *)[self userFromPeerID:peerID]).state = BMSessionStateUnconnect;
+        [self.tableView reloadData];
         self.alert = nil;
     }];
 }
